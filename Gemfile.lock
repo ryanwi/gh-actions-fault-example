@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/ruby-amqp/bunny.git
-  revision: f3362935628c7eb8d2e85b255314fa78ffac2659
-  tag: 2.17.0
-  specs:
-    bunny (2.17.0)
-      amq-protocol (~> 2.3, >= 2.3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,6 +7,8 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     bcrypt_pbkdf (1.0.1)
+    bunny (2.17.0)
+      amq-protocol (~> 2.3, >= 2.3.1)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.2)
@@ -101,7 +95,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt_pbkdf
   bundler (>= 1.3.0)
-  bunny (= 2.17.0)!
+  bunny (= 2.17.0)
   dogstatsd-ruby
   dotenv
   dotenv-deployment
