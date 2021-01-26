@@ -12,5 +12,6 @@ gem "honeybadger", "4.7.2"
 gem "sequel", "5.36"
 
 group :development, :test do
+  gem "bundler-audit"
   gem "rspec"
 end
