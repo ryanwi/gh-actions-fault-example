@@ -1,15 +1,20 @@
+GIT
+  remote: https://github.com/jeremyevans/sequel.git
+  revision: 54a8500c2e58b0047938cd3e7c55f9ef8f0eb52d
+  specs:
+    sequel (5.40.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     mysql2 (0.5.3)
-    sequel (5.40.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   mysql2 (~> 0.5.3)
-  sequel (~> 5.40)
+  sequel (~> 5.40)!
 
 BUNDLED WITH
    1.17.3
