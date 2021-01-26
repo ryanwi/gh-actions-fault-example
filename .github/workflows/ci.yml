@@ -33,8 +33,6 @@ jobs:
         run: |
           mysql -uroot -h 127.0.0.1 -e "DROP DATABASE IF EXISTS ghactions_test;"
           mysql -uroot -h 127.0.0.1 -e "CREATE DATABASE ghactions_test;"
-          bundle exec sequel -m db/migrate mysql2://root:@127.0.0.1/ghactions_test
-      # - name: Run tests
-      #   env:
-      #     DATABASE_URL: mysql2://root:@127.0.0.1/ghactions_test
-      #   run: bundle exec rspec
+      - name: query database with mysql2
+        run: |
+          bundle exec ruby -e "require 'mysql2'; results = Mysql2::Client.new(:host => '127.0.0.1', :username => 'root', :database => 'ghactions_test').query('SELECT * FROM users');"
