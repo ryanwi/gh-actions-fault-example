@@ -15,6 +15,7 @@ gem "net-sftp"
 gem "net-ssh"
 gem "ed25519"
 gem "bcrypt_pbkdf"
+gem "mysql2"
 
 group :development, :test do
   gem "rspec"

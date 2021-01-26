@@ -49,6 +49,7 @@ GEM
     method_source (1.0.0)
     multi_json (1.14.1)
     multipart-post (2.1.1)
+    mysql2 (0.5.3)
     net-sftp (3.0.0)
       net-ssh (>= 5.0.0, < 7.0.0)
     net-ssh (6.1.0)
@@ -96,6 +97,7 @@ DEPENDENCIES
   elasticsearch (~> 6.0, >= 6.0.1)
   emque-consuming (= 1.8.0)
   honeybadger
+  mysql2
   net-sftp
   net-ssh
   pry
