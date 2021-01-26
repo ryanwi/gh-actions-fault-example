@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:5.7
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+        options: >-
+          --health-cmd "mysqladmin ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 3
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.3.8
+          bundler-cache: true
+      - name: Create database
+        run: |
+          mysql -uroot -h 127.0.0.1 -e "DROP DATABASE IF EXISTS ghactions_test;"
+          mysql -uroot -h 127.0.0.1 -e "CREATE DATABASE ghactions_test;"
+          bundle exec sequel -m db/migrate mysql2://root:@127.0.0.1/ghactions_test
