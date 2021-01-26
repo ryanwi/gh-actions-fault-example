@@ -1,18 +1,21 @@
 source "https://rubygems.org"
 
 gem "emque-consuming", "1.8.0"
-gem "emque-producing", "~> 1.3.1"
-gem "bunny", "2.17.0"
-gem "dotenv", "1.0.2"
-gem "dotenv-deployment", "0.3.0"
-gem "mysql2", "0.5.3"
+gem "bunny", "~> 2.17"
+gem "dotenv"
+gem "dotenv-deployment"
 gem "rake"
 gem "pry"
-gem "honeybadger", "4.7.2"
-gem "sequel", "5.36"
+gem "honeybadger"
+gem "sequel"
+gem "table_print"
+gem "elasticsearch", "~> 6.0", ">= 6.0.1"
 gem "dogstatsd-ruby", :require => false
+gem "net-sftp"
+gem "net-ssh"
+gem "ed25519"
+gem "bcrypt_pbkdf"
 
 group :development, :test do
-  gem "bundler-audit"
   gem "rspec"
 end
