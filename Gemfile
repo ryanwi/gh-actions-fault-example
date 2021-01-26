@@ -16,6 +16,7 @@ gem "net-ssh"
 gem "ed25519"
 gem "bcrypt_pbkdf"
 gem "mysql2"
+gem "typhoeus", "0.7.3"
 
 group :development, :test do
   gem "rspec"
