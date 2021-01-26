@@ -1,9 +1,15 @@
+GIT
+  remote: https://github.com/ruby-amqp/bunny.git
+  revision: f3362935628c7eb8d2e85b255314fa78ffac2659
+  tag: 2.17.0
+  specs:
+    bunny (2.17.0)
+      amq-protocol (~> 2.3, >= 2.3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
     amq-protocol (2.3.2)
-    bunny (2.17.0)
-      amq-protocol (~> 2.3, >= 2.3.1)
     mysql2 (0.5.3)
     sequel (5.40.0)
 
@@ -11,9 +17,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bunny (= 2.17.0)
-  mysql2 (= 0.5.3)
-  sequel
+  bunny (~> 2.17)!
+  mysql2 (~> 0.5.3)
+  sequel (~> 5.40)
 
 BUNDLED WITH
    1.17.3
