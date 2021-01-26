@@ -5,3 +5,7 @@ services:
     build: .
     volumes:
       - .:/usr/src/app
+      - gh_example_bundle:/usr/local/bundle
+
+volumes:
+  gh_example_bundle:

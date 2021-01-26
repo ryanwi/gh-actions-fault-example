@@ -12,6 +12,7 @@ GEM
     dante (0.2.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    diff-lcs (1.4.4)
     emque-consuming (1.8.0)
       celluloid (= 0.16.0)
       dante (~> 0.2.0)
@@ -28,6 +29,19 @@ GEM
     oj (2.18.5)
     pipe-ruby (1.0.0)
     puma (3.12.6)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.1)
     sequel (5.36.0)
     thread_safe (0.3.6)
     timers (4.0.4)
@@ -44,6 +58,7 @@ PLATFORMS
 DEPENDENCIES
   emque-consuming (= 1.8.0)
   mysql2 (= 0.5.3)
+  rspec
   sequel (= 5.36)
 
 BUNDLED WITH
