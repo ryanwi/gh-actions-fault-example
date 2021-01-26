@@ -17,6 +17,7 @@ gem "ed25519"
 gem "bcrypt_pbkdf"
 gem "mysql2"
 gem "typhoeus", "0.7.3"
+gem "faraday", "0.9.2"
 
 group :development, :test do
   gem "rspec"
