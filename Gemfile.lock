@@ -1,13 +1,48 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    dante (0.2.0)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    emque-consuming (1.8.0)
+      celluloid (= 0.16.0)
+      dante (~> 0.2.0)
+      inflecto (~> 0.0.2)
+      oj (~> 2.18.5)
+      pipe-ruby (~> 1.0)
+      puma (~> 3.12)
+      virtus (~> 1.0)
+    equalizer (0.0.11)
+    hitimes (2.0.0)
+    ice_nine (0.11.2)
+    inflecto (0.0.2)
     mysql2 (0.5.3)
+    oj (2.18.5)
+    pipe-ruby (1.0.0)
+    puma (3.12.6)
     sequel (5.36.0)
+    thread_safe (0.3.6)
+    timers (4.0.4)
+      hitimes
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  emque-consuming (= 1.8.0)
   mysql2 (= 0.5.3)
   sequel (= 5.36)
 
