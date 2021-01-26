@@ -13,7 +13,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mysql2 (~> 0.5.3)
+  mysql2 (~> 0.5.1)
   sequel (~> 5.40)!
 
 BUNDLED WITH
