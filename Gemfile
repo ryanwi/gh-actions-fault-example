@@ -10,6 +10,7 @@ gem "rake"
 gem "pry"
 gem "honeybadger", "4.7.2"
 gem "sequel", "5.36"
+gem "dogstatsd-ruby", :require => false
 
 group :development, :test do
   gem "bundler-audit"

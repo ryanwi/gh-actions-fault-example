@@ -20,6 +20,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.4.4)
+    dogstatsd-ruby (4.8.2)
     dotenv (1.0.2)
     dotenv-deployment (0.3.0)
       dotenv (~> 1.0)
@@ -79,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   bundler-audit
   bunny (= 2.17.0)
+  dogstatsd-ruby
   dotenv (= 1.0.2)
   dotenv-deployment (= 0.3.0)
   emque-consuming (= 1.8.0)
