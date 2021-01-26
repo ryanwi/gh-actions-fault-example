@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-bundle install
+# bundle update
 
 exec "$@"

@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 gem "emque-consuming", "1.8.0"
 gem "bunny", "~> 2.17"
+gem "typhoeus", "0.7.3"
+gem "faraday", "0.9.2"
 gem "dotenv"
 gem "dotenv-deployment"
 gem "rake"
@@ -16,8 +18,6 @@ gem "net-ssh"
 gem "ed25519"
 gem "bcrypt_pbkdf"
 gem "mysql2"
-gem "typhoeus", "0.7.3"
-gem "faraday", "0.9.2"
 
 group :development, :test do
   gem "rspec"
