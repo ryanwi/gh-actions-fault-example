@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/emque/emque-stats.git
+  remote: https://github.com/emque/emque-stats
   revision: f072499507f83bb7bb51d1696a5ada63d8476658
   specs:
     emque-stats (1.1.1)
