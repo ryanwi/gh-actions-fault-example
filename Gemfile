@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "emque-consuming", "1.8.0"
+gem "emque-stats", :git => "https://github.com/emque/emque-stats.git"
 gem "bunny", "~> 2.17"
 gem "typhoeus", "0.7.3"
 gem "faraday", "0.9.2"
