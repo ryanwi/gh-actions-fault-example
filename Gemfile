@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "emque-consuming", "1.8.0"
 # gem "emque-stats", :git => "https://github.com/emque/emque-stats.git"
+gem "bundler", ">= 1.3.0"
 gem "oj", "~> 2.10"
 gem "virtus", "~> 1.0"
 gem "bunny", "~> 2.17"
