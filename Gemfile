@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 
 gem "emque-consuming", "1.8.0"
-gem "emque-stats", :git => "https://github.com/emque/emque-stats"
 gem "bundler", ">= 1.3.0"
 gem "oj", "~> 2.10"
 gem "virtus", "~> 1.0"
-gem "bunny", "~> 2.17"
+gem "bunny", "2.17.0", :git => "https://github.com/ruby-amqp/bunny.git", :tag => "2.17.0"
 gem "typhoeus", "0.7.3"
 gem "faraday", "0.9.2"
 gem "dotenv"

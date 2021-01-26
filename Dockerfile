@@ -2,6 +2,7 @@ FROM ruby:2.3.8-slim
 
 RUN apt-get update -qq && apt-get install -y \
     build-essential \
+    git \
     default-libmysqlclient-dev \
     mysql-client
 
